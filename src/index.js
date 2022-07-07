@@ -46,8 +46,19 @@ import ReactDOM from 'react-dom'
 // }
 // setInterval(tick , 1000)
 
-import App from './reactZuJian/index'
+// import App from './reactZuJian/index'
+// ReactDOM.render(
+//     // <App name='Sara'/>,
+//     document.getElementById('root')
+// )
+
+//借助定时器实现对传入到子组件props的修改
+import Clock from './stateAndLifeCycle/index'
+// function tick(){
+//     ReactDOM.render(<Clock date={new Date()}/> , document.getElementById('root')) //但是在实践当中ReactDOM.render()只会调用一次,这也就引出了后面的有状态组件
+// }
+// setInterval(tick , 1000)
 ReactDOM.render(
-    <App name='Sara'/>,
+    <Clock/>,
     document.getElementById('root')
 )
