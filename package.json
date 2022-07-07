@@ -1,0 +1,20 @@
+{
+  "name": "react-guanfangwendang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "'xiaobai-web715' <'liuxinghua715@163.com'>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config ./config/webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
