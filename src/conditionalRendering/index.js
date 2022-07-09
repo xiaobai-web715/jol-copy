@@ -1,6 +1,7 @@
 import React , {useState , useCallback} from 'react'
 import Greeting from './Greeting'
 import Page from './blockRendering'
+import ListAndKey from '../listAndKey/index'
 const LoginButton = (props) => {
     return(
         <button onClick={props.onClick}>
@@ -37,6 +38,7 @@ const index = () => {
             {/* 当然也可以使用三目运算符 */}
             {isLoggedIn ? <LogoutButton onClick={handleLogoutClick}></LogoutButton> : <LoginButton onClick={handleLoginClick}></LoginButton>}
             <Page/>
+            <ListAndKey/>
         </>
     )
 }
