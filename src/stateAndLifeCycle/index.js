@@ -8,7 +8,7 @@ import React from "react";
 //         </div>
 //     )
 // }
-import EventProcessing from '../eventProcessing/indiex'
+import EventProcessing from '../eventProcessing/index'
 class Clock extends React.Component{
     constructor(props){
         super(props)

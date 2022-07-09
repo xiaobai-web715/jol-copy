@@ -6,6 +6,7 @@ import React , {useState} from 'react'
 import useCallbackState1  from '../utils/synchroState'
 import axios from 'axios'
 import Toggle from './toggle'
+import ConditionlRendering from '../conditionalRendering/index'
 const indiex = () => {
     const [index , setIndex] = useCallbackState1(0)
     const [disabled , setDisabled] = useState(false)
@@ -69,6 +70,7 @@ const indiex = () => {
             <button type='submit' disabled={disabled}>Submit</button>
         </form>
         <Toggle/>
+        <ConditionlRendering/>
     </>
   )
 }
