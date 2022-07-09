@@ -1,0 +1,6 @@
+{
+    "presets" : ["@babel/preset-env"],
+    "plugins" : [
+        "@babel/plugin-proposal-class-properties" //这个可以使用class fields语法
+    ]
+}

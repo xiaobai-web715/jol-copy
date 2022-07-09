@@ -8,7 +8,7 @@ import React from "react";
 //         </div>
 //     )
 // }
-
+import EventProcessing from '../eventProcessing/indiex'
 class Clock extends React.Component{
     constructor(props){
         super(props)
@@ -38,7 +38,7 @@ class Clock extends React.Component{
     //定时器触发state更新的函数
     tick(){
         //处于性能的考虑,react可能会把多次setState()的调用合并成一个调用(目的就是防止多个setState导致UI的多次更新,合并成一个之后,一次更新多个state只会触发一次UI的更新)
-        //this.setState({counter : this.state.counter + this.props.increment})这样的写法并不能成功更新计数器,要解决这样的一个问题可以在里面传入一个函数而非对象this.setState((staet , props) => {
+        //this.setState({counter : this.state.counter + this.props.increment})这样的写法并不能成功更新计数器,要解决这样的一个问题可以在里面传入一个函数而非对象this.setState((state , props) => {
             // return{counter : state.counter+props.increment}
         // })箭头函数也是非必须的
         //this.setState({date : new Date()})是浅合并,并不会影响到内部的其他状态
@@ -53,6 +53,7 @@ class Clock extends React.Component{
                 <h1>Hello , world!</h1>
                 {/* 如果你把props想象成单项的河流的话,state就是当地汇入当前河流的分支(无法做到回流) */}
                 <h2>It is{this.state.date.toLocaleTimeString()} </h2>
+                <EventProcessing/>
             </div>
         )
     }

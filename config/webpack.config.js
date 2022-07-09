@@ -20,7 +20,10 @@ module.exports = {
                         loader : 'babel-loader',
                         options : {
                             presets : ['@babel/preset-react']
-                        }
+                        },
+                    },
+                    {
+                        loader : 'eslint-loader', //应用eslint对代码进行规范
                     }
                 ]
             }
