@@ -61,4 +61,4 @@ import Clock from './stateAndLifeCycle/index'
 ReactDOM.render(
     <Clock/>,
     document.getElementById('root')
-)
+);
