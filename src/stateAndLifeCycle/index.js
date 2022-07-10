@@ -23,6 +23,7 @@ class Clock extends React.Component{
     //当第一次渲染组件时,加入定时器叫做挂载
     //当组件卸载的时候清除定时器被称为卸载
     componentDidMount(){
+        //因为这里的这个定时器会修改状态(后续的组件会重新进行渲染(不过新旧DOM树没有改变的不会更新))
         this.timerID = setInterval(
             // function(){
             //     this.tick()

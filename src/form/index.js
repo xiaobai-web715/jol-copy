@@ -2,6 +2,7 @@
 //在JSX中,表单元素(input、testarea等)通常自己维护state,并根据用户的输入进行更新。(React以这种方式控制取值的表单输入元素加做受控组件)
 import React from 'react'
 import Merge from './merge'
+import StatePromotion from '../statePromotion/index'
 class Index extends React.Component{
     constructor(props){
         super(props)
@@ -64,8 +65,10 @@ class Index extends React.Component{
                         </select>
                     </label>
                     <input type='submit' value='提交'></input>
+                    {/* 像上述的写法就会给你一个警告(要么写成受控组件,要么用defaultValue或者read-only) */}
                 </form>
                 <Merge/>
+                <StatePromotion/>
             </>
         )
     }
